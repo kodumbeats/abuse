@@ -48,7 +48,7 @@ class TimeLimit implements Adapter
      * @param string $key
      * @param int $time
      * @param int $limit
-     * @param PDO $db
+     * @param Database $db
      */
     public function __construct(string $key, int $limit, int $time, Database $db)
     {
