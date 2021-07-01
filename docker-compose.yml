@@ -16,7 +16,7 @@ services:
       - abuse
     depends_on:
       - mysql
-    volumes:
+    # volumes:
       # - ./:/code
 
   php8:
@@ -27,7 +27,7 @@ services:
       - abuse
     depends_on:
       - mysql
-    volumes:
+    # volumes:
       # - ./:/code
 
 networks:
