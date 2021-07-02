@@ -19,6 +19,12 @@
         "ext-pdo": "*",
         "utopia-php/database": "*"
     },
+    "repositories": [
+        {
+        "type": "git",
+        "url": "https://github.com/kodumbeats/database"
+        }
+    ],
     "require-dev": {
         "phpunit/phpunit": "^9.4",
         "vimeo/psalm": "4.0.1"

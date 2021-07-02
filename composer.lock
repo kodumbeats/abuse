@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "242c5025fa49084a7d234f4e4c5558f0",
+    "content-hash": "67bf5994a01e014a6930727ddedc8df3",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -340,17 +340,11 @@
         },
         {
             "name": "utopia-php/database",
-            "version": "0.4.0",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/utopia-php/database.git",
-                "reference": "0b59d09a6622b472f82013623fd44e2b1b5504db"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/utopia-php/database/zipball/0b59d09a6622b472f82013623fd44e2b1b5504db",
-                "reference": "0b59d09a6622b472f82013623fd44e2b1b5504db",
-                "shasum": ""
+                "url": "https://github.com/kodumbeats/database",
+                "reference": "3397ca1042df8279e34e8f4d935d9d6c2938f2e8"
             },
             "require": {
                 "ext-mongodb": "*",
@@ -373,7 +367,11 @@
                     "Utopia\\Database\\": "src/Database"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Utopia\\Tests\\": "tests/Database"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -395,11 +393,7 @@
                 "upf",
                 "utopia"
             ],
-            "support": {
-                "issues": "https://github.com/utopia-php/database/issues",
-                "source": "https://github.com/utopia-php/database/tree/0.4.0"
-            },
-            "time": "2021-06-29T15:52:49+00:00"
+            "time": "2021-07-02T14:37:57+00:00"
         },
         {
             "name": "utopia-php/framework",
@@ -4048,7 +4042,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "utopia-php/database": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
